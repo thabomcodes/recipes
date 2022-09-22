@@ -39,3 +39,9 @@ h1 {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
