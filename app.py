@@ -1,11 +1,11 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__)
 
 
 @app.route("/")
 @app.route("/index")
-@app.route("home")
+@app.route("/home")
 def home():
     name_image_tuple = [("Air-Fried Korean Chicken", "chickenwings.png"),
                         ("Karaage", "karaage.png"),
