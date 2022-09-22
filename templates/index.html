@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <h1>Recipes</h1>
+        {% for item in items %}
+        <div class="recipe-container">
+            <img src="{{ url_for( 'static', filename='images/' + item[1])}}">
+            <div class="recipe-name">{{ item[0] }}</div>
+        </div>
+        {% endfor %}
+    </main>
+</body>
+</html>
