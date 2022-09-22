@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Karaage</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <main>
+            <div class="flex-container">
+                <h1>Karaage (Japanese Fried Chicken) with Honey Mayoster Sauce</h1>
+                <img src="{{ url_for('static', filename='images/karaage.png') }}" alt="Japanese Fried Chicken with Honey Mayoster Sauce">
+                <p>
+                    Very easy to make and my guests enjoy it a lot! It can be served as an appetizer, or 
+                    over a bed of rice as a quick weekday dinner! I usually marinate the night before to 
+                    give it more flavor, but if it's a last-minute meal you are preparing, no worries, 
+                    because there's still dipping sauce! Serve hot with shredded lettuce and a lemon wedge.
+                </p>
+            </div>
+            <div class="recipe-content">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 ½ tablespoons low-sodium soy sauce</li>
+                    <li>1 tablespoon honey</li>
+                    <li>2 teaspoons minced garlic</li>
+                    <li>2 teaspoons minced fresh ginger</li>
+                    <li>1 pound skinless, boneless chicken thighs, cut into bite-sized pieces</li>
+                    <li>1 egg</li>
+                    <li>1 cup panko bread crumbs</li>
+                    <li>vegetable oil for frying</li>
+                </ul>
+                <h3>Sauce:</h3>
+                <ul>
+                    <li>½ cup Japanese mayonnaise</li>
+                    <li>2 tablespoons honey</li>
+                    <li>2 tablespoons Dijon mustard</li>
+                    <li>3 tablespoons mirin (Japanese sweet wine)</li>
+                    <li>1 tablespoon low-sodium soy sauce</li>
+                </ul>          
+            </div>
+            <div class="recipe-content">
+                <h2>Steps</h2>
+                <ol>
+                    <li>
+                        Mix 1 1/2 tablespoon soy sauce, 1 tablespoon honey, garlic, and ginger 
+                        together in a bowl. Add chicken; turn to coat. Marinate in the refrigerator, 
+                        8 hours to overnight.
+                    </li>
+                    <li>
+                        Whisk egg in a bowl until smooth.
+                    </li>
+                    <li>
+                        Pour panko bread crumbs into a shallow bowl. Dip chicken pieces in whisked egg 
+                        and roll in panko until coated.
+                    </li>
+                    <li>
+                        Heat oil in a deep-fryer or large saucepan to 350 degrees F (175 degrees C). 
+                        Cook chicken in batches in the hot oil until golden brown, about 5 minutes. 
+                        Transfer to paper towels to drain excess oil.
+                    </li>
+                    <li>
+                        Mix Japanese mayonnaise, 2 tablespoons honey, Dijon mustard, mirin, and 1 
+                        tablespoon soy sauce together to make sauce. Pour sauce over chicken.
+                    </li>
+                </ol>
+            </div>
+            <p><a href="https://www.allrecipes.com/recipe/258032/karaage-japanese-fried-chicken-with-honey-mayoster-sauce/">Recipe Credits</a></p>
+            <p><a href="{{ url_for('home') }}">Return to Homepage</a></p>
+        </main>
+    </body>
+</html>

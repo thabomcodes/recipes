@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shoyu Chicken</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <main>
+            <div class="flex-container">
+                <h1>Shoyu Chicken</h1>
+                <img src="{{ url_for('static', filename='images/shoyuchicken.png') }}" alt="Shoyu Chicken">
+                <p>
+                    Shoyu Chicken is a popular Hawaiian dish. It is often served with rice. 
+                    The word shoyu is Japanese for soy sauce. Let the chicken soak in the 
+                    marinade for at least an hour, the longer the better. 
+                </p>
+            </div>
+            <div class="recipe-content">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 cup soy sauce</li>
+                    <li>1 cup brown sugar</li>
+                    <li>1 cup water</li>
+                    <li>4 cloves garlic, minced</li>
+                    <li>1 onion, chopped</li>
+                    <li>1 tablespoon grated fresh ginger root</li>
+                    <li>1 tablespoon ground black pepper</li>
+                    <li>1 tablespoon dried oregano</li>
+                    <li>1 teaspoon crushed red pepper flakes (Optional)</li>
+                    <li>1 teaspoon ground cayenne pepper (Optional)</li>
+                    <li>1 teaspoon ground paprika (Optional)</li>
+                    <li>5 pounds skinless chicken thighs</li>
+                </ul>
+            </div>
+            <div class="recipe-content">
+                <h2>Steps</h2>
+                <ol>
+                    <li>
+                        Whisk together the soy sauce, brown sugar, water, garlic, onion, ginger, 
+                        black pepper, oregano, red pepper flakes, cayenne pepper, and paprika in 
+                        a large glass or ceramic bowl. Add the chicken thighs, and toss to evenly 
+                        coat. Cover the bowl with plastic wrap, and marinate the chicken in the 
+                        refrigerator for at least 1 hour.
+                    </li>
+                    <li>
+                        Preheat an outdoor grill for medium heat, and lightly oil the grate.
+                    </li>
+                    <li>
+                        Remove the chicken thighs from the marinade. Discard the remaining marinade. 
+                        Grill the chicken thighs on the preheated grill until cooked through, about 
+                        15 minutes per side.
+                    </li>
+                </ol>
+            </div>
+            <p><a href="https://www.allrecipes.com/recipe/202463/shoyu-chicken/">Recipe Credits</a></p>
+            <p><a href="{{ url_for('home') }}">Return to Homepage</a></p>
+        </main>
+    </body>
+</html>

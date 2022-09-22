@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Air-Fried Korean Chicken Wings</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <main>
+            <div class="flex-container">
+                <h1>Air-Fried Korean Chicken Wings</h1>
+                <img src="{{ url_for('static', filename='images/chickenwings.png') }}" alt="Korean Chicken Wings">
+                <p>
+                    These Korean-style air-fried wings are crispy, sticky and spicy. Cooked in an air 
+                    fryer they are ready in less than 30 minutes. They are perfect as an appetizer or 
+                    add some rice and veggies on the side and you have a balanced meal.
+                </p>
+            </div>
+            <div class="recipe-content">
+                <h2>Ingredients</h2>
+                <h3>Sauce:</h3>
+                <ul>
+                    <li>¼ cup hot honey (such as Mike's Hot Honey®)</li>
+                    <li>3 tablespoons gochujang (Korean hot pepper paste)</li>
+                    <li>1 tablespoon brown sugar</li>
+                    <li>1 tablespoon soy sauce</li>
+                    <li>1 teaspoon lemon juice</li>
+                    <li>2 teaspoons minced garlic</li>
+                    <li>1 teaspoon minced fresh ginger root</li>
+                    <li>½ teaspoon salt</li>
+                    <li>¼ teaspoon black pepper</li>
+                    <li>¼ cup finely chopped green onions (green part only)</li>
+                </ul>
+                <h3>Wings:</h3>
+                <ul>
+                    <li>2 pounds chicken wings</li>
+                    <li>1 teaspoon salt</li>
+                    <li>1 teaspoon garlic powder</li>
+                    <li>1 teaspoon onion powder</li>
+                    <li>½ teaspoon black pepper</li>
+                    <li>½ cup cornstarch</li>
+                </ul>
+                <h3>Garnish:</h3>
+                <ul>
+                    <li>2 tablespoons chopped green onions</li>
+                    <li>1 teaspoon sesame seeds</li>
+                </ul>
+            </div>
+            <div class="recipe-content">
+                <h2>Steps</h2>
+                <ol>
+                    <li>
+                        Combine hot honey, gochujang, brown sugar, soy sauce, lemon juice, garlic, 
+                        ginger, salt, and black pepper in a saucepan. Bring sauce to a boil over 
+                        medium heat, reduce heat, and simmer for 5 minutes. Add green onions and stir.
+                    </li>
+                    <li>
+                        Preheat air fryer to 400 degrees F (200 degrees C).
+                    </li>
+                    <li>
+                        Place wings in a large bowl and toss with salt, garlic powder, onion powder 
+                        and black pepper. Add cornstarch and toss wings until fully coated. Shake each 
+                        wing and place in the air fryer basket, making sure they are not touching; cook 
+                        in batches if necessary.
+                    </li>
+                    <li>
+                        Fry in the preheated air fryer for 10 minutes, shake basket, and fry an 
+                        additional 10 minutes. Flip wings over and fry until chicken is cooked through 
+                        and juices run clear, 7 to 8 more minutes.
+                    </li>
+                    <li>
+                        Dip each wing in the sauce and garnish with chopped green onions and sesame seeds. 
+                        Serve with remaining sauce on the side.</li>
+                </ol>
+            </div>
+            <p><a href="https://www.allrecipes.com/recipe/273764/air-fried-korean-chicken-wings/">Recipe Credits</a></p>
+            <p><a href="{{ url_for('home') }}">Return to Homepage</a></p>
+        </main>
+    </body>
+</html>
